@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="437px" preserveAspectRatio="none" style="width:1159px;height:437px;" version="1.1" viewBox="0 0 1159 437" width="1159px" zoomAndPan="magnify"><defs><filter height="300%" id="f17lblu1099ehg" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="Sans" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="504" x="331" y="16.708">Roadmap миграции RetailCore. Волны и зависимости</text><!--MD5=[2e4711f9b0ea46d06deb8c080e294c26]
+entity W0--><rect fill="#E1D5E7" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="147" x="6" y="198.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="16" y="221.9482">Wave 0</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="123" x="16" y="238.2451">baseline, брокер,</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="127" x="16" y="254.542">словарь событий</text><!--MD5=[67c94c000a737ec9846f961855f21942]
+entity W1--><rect fill="#DAE8FC" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="138" x="213" y="242.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="223" y="265.9482">Wave 1</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="223" y="282.2451">сквозная</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="223" y="298.542">наблюдаемость</text><!--MD5=[efc84f47f5bca58f364274a9dba027a7]
+entity W2--><rect fill="#DAE8FC" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="179" x="416.5" y="154.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="426.5" y="177.9482">Wave 2</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="159" x="426.5" y="194.2451">слой событий заказа,</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="426.5" y="210.542">outbox и CDC</text><!--MD5=[6ca56bf646632af4e95de8dc1bfb69f6]
+entity W3--><rect fill="#D5E8D4" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="180" x="674" y="28.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="684" y="51.9482">Wave 3</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="121" x="684" y="68.2451">сервис статусов</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="160" x="684" y="84.542">read-модель и cutover</text><!--MD5=[4b335fea999035f614c524d4b6068a23]
+entity W4--><rect fill="#D5E8D4" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="206" x="661" y="132.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="671" y="155.9482">Wave 4</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="169" x="671" y="172.2451">интеграционный слой,</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="186" x="671" y="188.542">уход от обмена через БД</text><!--MD5=[f69fd33e54b0921855f82ffe5fda9d42]
+entity W5--><rect fill="#D5E8D4" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="140" x="694" y="236.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="704" y="259.9482">Wave 5</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="704" y="276.2451">разгрузка Oracle</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="100" x="704" y="292.542">от аналитики</text><!--MD5=[40697f37cb886f07318739ca0ef90e09]
+entity W6--><rect fill="#D5E8D4" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="190" x="411" y="280.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="421" y="303.9482">Wave 6</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="170" x="421" y="320.2451">промо за абстракцией,</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="163" x="421" y="336.542">политика деградации</text><!--MD5=[6210425c66292ca453d0ee38deb5ec92]
+entity W7--><rect fill="#FFF2CC" filter="url(#f17lblu1099ehg)" height="68.8906" style="stroke: #33507A; stroke-width: 1.5;" width="221" x="927" y="184.9531"/><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="937" y="207.9482">Wave 7</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="113" x="937" y="224.2451">изоляция ядра,</text><text fill="#1B2A44" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="201" x="937" y="240.542">подготовка ухода от Oracle</text><!--MD5=[30ee9f6bb354d6822c5d66ec7bf44302]
+link W0 to W1--><path d="M153.17,249.4031 C170.99,253.3131 190.08,257.5031 207.92,261.4131 " fill="none" id="W0-&gt;W1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="212.92,262.5131,204.9857,256.6781,208.0361,261.4421,203.2721,264.4924,212.92,262.5131" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9325c4085126e825a9f615594610ca2a]
+link W0 to W2--><path d="M153.47,225.8931 C224.8,218.4931 333.7,207.2131 411.38,199.1531 " fill="none" id="W0-&gt;W2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="416.45,198.6331,407.0871,195.5777,411.4764,199.1462,407.9079,203.5355,416.45,198.6331" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2aa6e74f1c0037b71396d9a92c0049ad]
+link W1 to W2--><path d="M351.12,250.4531 C370.67,242.7031 392.32,234.1231 413.05,225.9031 " fill="none" id="W1-&gt;W2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="417.74,224.0431,407.8992,223.6456,413.0927,225.8877,410.8506,231.0813,417.74,224.0431" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0236886ed49789c9a3d47bba49c12e47]
+link W2 to W3--><path d="M577.29,154.8531 C611.72,137.9131 653.18,117.5031 688.19,100.2731 " fill="none" id="W2-&gt;W3" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="692.87,97.9731,683.0282,98.3448,688.3808,100.1748,686.5509,105.5275,692.87,97.9731" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[40d869711b938471f5ef155683458c41]
+link W2 to W4--><path d="M595.82,181.8231 C615.12,180.1631 635.74,178.3931 655.67,176.6731 " fill="none" id="W2-&gt;W4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="660.73,176.2431,651.4205,173.0286,655.7484,176.6713,652.1056,180.9992,660.73,176.2431" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[68274c7ef068e33524a81d407ddf1201]
+link W2 to W5--><path d="M595.82,217.9031 C626.12,227.6131 659.67,238.3531 688.72,247.6631 " fill="none" id="W2-&gt;W5" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="693.71,249.2631,686.3594,242.7081,688.9484,247.7377,683.9187,250.3266,693.71,249.2631" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ced19f0b6b333f30969b85f6e1663d41]
+link W1 to W6--><path d="M351.12,289.1131 C368.36,292.0631 387.23,295.2931 405.67,298.4531 " fill="none" id="W1-&gt;W6" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="410.86,299.3431,402.6631,293.8833,405.9315,298.5003,401.3145,301.7688,410.86,299.3431" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4cc7527d199cff2959db741c36ea90c9]
+link W3 to W7--><path d="M834.52,97.9631 C845.47,103.6631 856.6,109.6231 867,115.4531 C904.61,136.5331 945.87,161.8031 978.26,182.1531 " fill="none" id="W3-&gt;W7" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="982.57,184.8631,977.0852,176.6829,978.3388,182.1991,972.8227,183.4527,982.57,184.8631" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[48b69294fc7c2ca9e9ccbdc44689d5c3]
+link W4 to W7--><path d="M867.26,187.0331 C884.98,190.4331 903.52,193.9831 921.55,197.4331 " fill="none" id="W4-&gt;W7" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="926.62,198.4131,918.5379,192.7846,921.7101,197.4684,917.0263,200.6405,926.62,198.4131" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[059d20c22c00415c4426252455573a2d]
+link W5 to W7--><path d="M834.21,258.1931 C860.8,253.1031 891.9,247.1431 921.64,241.4531 " fill="none" id="W5-&gt;W7" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="926.79,240.4631,917.1975,238.2306,921.8796,241.4052,918.7049,246.0873,926.79,240.4631" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3d2b07e4e19ddc01105b8d17a08f04fe]
+link W6 to W7--><path d="M601.01,332.4031 C674.78,342.1831 779.31,348.2131 867,323.4531 C912.79,310.5231 958.4,281.3731 990.75,257.2231 " fill="none" id="W6-&gt;W7" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="995.03,253.9931,985.4389,256.2315,991.042,257.0091,990.2645,262.6123,995.03,253.9931" style="stroke: #A80036; stroke-width: 1.0;"/><rect fill="#DDDDDD" height="58.8906" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.0;" width="548" x="308.5" y="367.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="261" x="314.5" y="385.9482">Стрелка это жёсткая зависимость.</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="420" x="314.5" y="402.2451">Wave 3, Wave 4 и Wave 5 после Wave 2 идут параллельно.</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="536" x="314.5" y="418.542">Wave 6 зависит только от Wave 1 и идёт параллельно с Wave 4 и Wave 5.</text><!--MD5=[7f19c2285251ce2e7aeccaa2852d2b57]
+@startuml migration-roadmap
+title Roadmap миграции RetailCore. Волны и зависимости
+
+skinparam DefaultFontName Sans
+skinparam rectangle {
+  BorderColor #33507A
+  FontColor #1B2A44
+}
+left to right direction
+
+legend bottom
+  Стрелка это жёсткая зависимость.
+  Wave 3, Wave 4 и Wave 5 после Wave 2 идут параллельно.
+  Wave 6 зависит только от Wave 1 и идёт параллельно с Wave 4 и Wave 5.
+endlegend
+
+rectangle "Wave 0\nbaseline, брокер,\nсловарь событий" as W0 #E1D5E7
+rectangle "Wave 1\nсквозная\nнаблюдаемость" as W1 #DAE8FC
+rectangle "Wave 2\nслой событий заказа,\noutbox и CDC" as W2 #DAE8FC
+rectangle "Wave 3\nсервис статусов\nread-модель и cutover" as W3 #D5E8D4
+rectangle "Wave 4\nинтеграционный слой,\nуход от обмена через БД" as W4 #D5E8D4
+rectangle "Wave 5\nразгрузка Oracle\nот аналитики" as W5 #D5E8D4
+rectangle "Wave 6\nпромо за абстракцией,\nполитика деградации" as W6 #D5E8D4
+rectangle "Wave 7\nизоляция ядра,\nподготовка ухода от Oracle" as W7 #FFF2CC
+
+W0 - -> W1
+W0 - -> W2
+W1 - -> W2
+W2 - -> W3
+W2 - -> W4
+W2 - -> W5
+W1 - -> W6
+W3 - -> W7
+W4 - -> W7
+W5 - -> W7
+W6 - -> W7
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 17.0.20.1+1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

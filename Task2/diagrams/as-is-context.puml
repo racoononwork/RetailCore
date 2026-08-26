@@ -1,0 +1,76 @@
+@startuml as-is-context
+' Диаграмма контекста AS-IS для RetailCore.
+' Быстрый вид этой же диаграммы в Mermaid лежит в ../as-is-analysis.md.
+' Пометка PROBLEM обозначает проблемную зону.
+title RetailCore AS-IS Context. Пометка PROBLEM обозначает проблемную зону
+
+skinparam DefaultFontName Sans
+skinparam rectangle {
+  BackgroundColor #F7F9FC
+  BorderColor #33507A
+}
+skinparam database {
+  BackgroundColor #FFF2CC
+  BorderColor #B7942A
+}
+legend bottom
+  Сплошная стрелка это синхронный вызов.
+  Пунктир это fallback или обмен через БД.
+  PROBLEM это проблемная зона.
+endlegend
+
+package "Внешние участники" #EEEEEE {
+  actor "Клиенты\nвеб и мобильное" as CUST
+  rectangle "Маркетплейсы\n[PROBLEM] разные ветки и контракты" as MP #FFE6CC
+  rectangle "Платёжные провайдеры" as PAY #FFE6CC
+  rectangle "Службы доставки" as DLV #FFE6CC
+}
+
+package "Платформа RetailCore, on-premise ЦОД" {
+
+  package "Монолитное ядро на Java, центральный оркестратор [PROBLEM]" #E6F0FF {
+    rectangle "Оформление заказа\ncreateOrder" as ORDER #DAE8FC
+    rectangle "Расчёт цены и промо\nтри механизма и fallback [PROBLEM]" as PRICE #DAE8FC
+    rectangle "Маршрутизация доставки\nRouteRule [PROBLEM]" as ROUTE #DAE8FC
+    rectangle "Статусы заказа\nразмазаны по слоям [PROBLEM]" as STATUS #DAE8FC
+    rectangle "Оркестрация оплаты\nсинхронная [PROBLEM]" as PAYORCH #DAE8FC
+  }
+
+  package "Сервисы вокруг ядра" {
+    rectangle "Promo-сервис\nне во всех сценариях" as PROMO #D5E8D4
+    rectangle "Сервис наличия" as AVAIL #D5E8D4
+    rectangle "Логистические сервисы\nчастично вынесены" as LOGI #D5E8D4
+    rectangle ".NET-сервис интеграций\nобмен через staging [PROBLEM]" as NET #D5E8D4
+    rectangle "Python-аналитика\nи отчётность [PROBLEM]" as PYAN #D5E8D4
+  }
+
+  rectangle "Batch и периодические джобы\nretry, коррекции статусов" as BATCH #FFF2CC
+
+  database "Oracle\nоперационная БД\nplus PL/SQL логика legacy_promo_pkg\nplus staging INT_ORDER_EXPORT и RETRY_DELIVERY_QUEUE [PROBLEM]\nplus конкуренция аналитики за ресурс [PROBLEM]" as ORA
+}
+
+rectangle "Внутренние потребители\nпродажи и маркетинг, операции, поддержка, финансы" as INT #EEEEEE
+
+CUST --> ORDER : checkout, sync
+MP --> ORDER : разные ветки [PROBLEM]
+MP --> STATUS : статусы, задержки подтверждений
+ORDER --> PRICE
+PRICE --> PROMO : sync, не всегда
+PRICE ..> ORA : fallback legacy_promo_pkg [PROBLEM]
+ORDER --> AVAIL : sync
+ORDER --> ROUTE
+ROUTE --> LOGI : reserveSlot, sync
+ORDER --> PAYORCH
+PAYORCH --> PAY : createSession, sync
+LOGI --> DLV : REST, очередь или batch [PROBLEM]
+ORDER ..> ORA : INSERT INT_ORDER_EXPORT [PROBLEM]
+ORA ..> NET : polling staging
+NET --> DLV
+ORDER ..> ORA : RETRY_DELIVERY_QUEUE [PROBLEM]
+STATUS ..> ORA
+BATCH --> ORA : polling очередей-таблиц
+BATCH --> STATUS
+PYAN ..> ORA : прямой SQL, staging, API, CSV [PROBLEM]\nконкуренция за Oracle
+ORDER --> INT
+
+@enduml

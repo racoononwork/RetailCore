@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="900px" preserveAspectRatio="none" style="width:1758px;height:900px;" version="1.1" viewBox="0 0 1758 900" width="1758px" zoomAndPan="magnify"><defs><filter height="300%" id="f1rgx2gldzoq8z" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="Sans" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="595" x="587.5" y="16.708">RetailCore TO-BE Context. Целевое промежуточное состояние</text><!--MD5=[6a71daf9af52e6a081f4d4d65292ce1c]
+cluster Внешние участники--><polygon fill="#EEEEEE" filter="url(#f1rgx2gldzoq8z)" points="991,540.9531,1162,540.9531,1169,563.25,1736,563.25,1736,708.9531,991,708.9531,991,540.9531" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="991" x2="1169" y1="563.25" y2="563.25"/><text fill="#000000" font-family="Sans" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="165" x="995" y="555.9482">Внешние участники</text><!--MD5=[dff9f77edf3dfb711c244e7d5f222e6d]
+cluster Платформа RetailCore, целевое промежуточное состояние--><polygon fill="#FFFFFF" filter="url(#f1rgx2gldzoq8z)" points="22,44.9531,513,44.9531,520,67.25,967,67.25,967,686.4531,22,686.4531,22,44.9531" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="520" y1="67.25" y2="67.25"/><text fill="#000000" font-family="Sans" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="485" x="26" y="59.9482">Платформа RetailCore, целевое промежуточное состояние</text><!--MD5=[3e881872a09859e8d8aa2d598a4419dd]
+cluster Монолитное ядро на Java [изолируется]--><polygon fill="#E6F0FF" filter="url(#f1rgx2gldzoq8z)" points="344,255.9531,676,255.9531,683,278.25,943,278.25,943,491.9531,344,491.9531,344,255.9531" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="344" x2="683" y1="278.25" y2="278.25"/><text fill="#000000" font-family="Sans" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="326" x="348" y="270.9482">Монолитное ядро на Java [изолируется]</text><!--MD5=[f0db68f788f533c2bdfa1b1d4aa6038d]
+entity CUST--><ellipse cx="1658" cy="604.4531" fill="#FEFECE" filter="url(#f1rgx2gldzoq8z)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M1658,612.4531 L1658,639.4531 M1645,620.4531 L1671,620.4531 M1658,639.4531 L1645,654.4531 M1658,639.4531 L1671,654.4531 " fill="none" filter="url(#f1rgx2gldzoq8z)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="66" x="1596" y="672.9482">Клиенты</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="124" x="1596" y="689.2451">веб и мобильное</text><!--MD5=[4c4b63aa0119a823331c6b9916b4b18a]
+entity MP--><rect fill="#FFE6CC" filter="url(#f1rgx2gldzoq8z)" height="36.2969" style="stroke: #33507A; stroke-width: 1.5;" width="130" x="1007" y="625.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="110" x="1017" y="648.9482">Маркетплейсы</text><!--MD5=[d366c8f0dc4c6bc8d490ac71b024bee8]
+entity PAY--><rect fill="#FFE6CC" filter="url(#f1rgx2gldzoq8z)" height="36.2969" style="stroke: #33507A; stroke-width: 1.5;" width="202" x="1359" y="625.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="182" x="1369" y="648.9482">Платёжные провайдеры</text><!--MD5=[7f88220df78a4f34b15ccb4307bd53fa]
+entity DLV--><rect fill="#FFE6CC" filter="url(#f1rgx2gldzoq8z)" height="36.2969" style="stroke: #33507A; stroke-width: 1.5;" width="152" x="1172" y="625.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="132" x="1182" y="648.9482">Службы доставки</text><!--MD5=[a397d52fc4cc66d378791d6a56cd3939]
+entity OBS--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="52.5938" style="stroke: #33507A; stroke-width: 1.5;" width="256" x="58" y="119.4531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="160" x="68" y="142.4482">Слой наблюдаемости</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="236" x="68" y="158.7451">correlation-id и таймлайн [новое]</text><!--MD5=[d6276b193dab8aa1cf65f7635e518919]
+entity ACL--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="52.5938" style="stroke: #33507A; stroke-width: 1.5;" width="165" x="758.5" y="119.4531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="144" x="768.5" y="142.4482">Anti-Corruption Layer</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="145" x="768.5" y="158.7451">вокруг ядра [новое]</text><!--MD5=[7bf72cb16cf24bc0f91d4e03bd66f8d8]
+entity EVENTS--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="52.5938" style="stroke: #33507A; stroke-width: 1.5;" width="177" x="148.5" y="422.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="157" x="158.5" y="445.9482">Слой событий заказа</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="111" x="158.5" y="462.2451">брокер [новое]</text><!--MD5=[8f49dc2b1589a78031d2977df6f95d22]
+entity STATUSSVC--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="52.5938" style="stroke: #33507A; stroke-width: 1.5;" width="239" x="423.5" y="617.4531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="219" x="433.5" y="640.4482">Сервис статусов и таймлайна</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="149" x="433.5" y="656.7451">read-модель [новое]</text><!--MD5=[6c93f7d86215baefe637ce44dc12faf8]
+entity INTG--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="52.5938" style="stroke: #33507A; stroke-width: 1.5;" width="302" x="86" y="617.4531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="166" x="96" y="640.4482">Интеграционный слой</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="282" x="96" y="656.7451">фасад, ACL, идемпотентность [новое]</text><!--MD5=[b6ecd69359c5092f988072c51565525c]
+entity ANALYT--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="52.5938" style="stroke: #33507A; stroke-width: 1.5;" width="220" x="731" y="617.4531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="200" x="741" y="640.4482">Аналитическое хранилище</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="149" x="741" y="656.7451">на событиях [новое]</text><!--MD5=[b9224fce8dcf6a7f0da353cd98dd13a3]
+entity ORA--><path d="M377.5,108.9531 C377.5,98.9531 523,98.9531 523,98.9531 C523,98.9531 668.5,98.9531 668.5,108.9531 L668.5,183.1406 C668.5,193.1406 523,193.1406 523,193.1406 C523,193.1406 377.5,193.1406 377.5,183.1406 L377.5,108.9531 " fill="#FFF2CC" filter="url(#f1rgx2gldzoq8z)" style="stroke: #B7942A; stroke-width: 1.5;"/><path d="M377.5,108.9531 C377.5,118.9531 523,118.9531 523,118.9531 C523,118.9531 668.5,118.9531 668.5,108.9531 " fill="none" style="stroke: #B7942A; stroke-width: 1.5;"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44" x="387.5" y="135.9482">Oracle</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="155" x="387.5" y="152.2451">система записи ядра</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="211" x="387.5" y="168.542">без аналитической нагрузки</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="271" x="387.5" y="184.8389">и без обмена через БД [изменяется]</text><!--MD5=[2c99adc7d2e5d85f3a9f735e45d8cbbc]
+entity ORDER--><rect fill="#DAE8FC" filter="url(#f1rgx2gldzoq8z)" height="36.2969" style="stroke: #33507A; stroke-width: 1.5;" width="294" x="619" y="309.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="274" x="629" y="332.9482">Оформление заказа [без изменений]</text><!--MD5=[d9d2d0633c099e6590b5d44a2844e9bb]
+entity PAYORCH--><rect fill="#DAE8FC" filter="url(#f1rgx2gldzoq8z)" height="36.2969" style="stroke: #33507A; stroke-width: 1.5;" width="302" x="625" y="431.4531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="282" x="635" y="454.4482">Оркестрация оплаты [без изменений]</text><!--MD5=[a72dfdf86d5ef128b58ca9aae13c4fea]
+entity PROMO--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="52.5938" style="stroke: #33507A; stroke-width: 1.5;" width="229" x="360.5" y="422.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="370.5" y="445.9482">Промо за абстракцией</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="209" x="370.5" y="462.2451">Branch by Abstraction [новое]</text><!--MD5=[645b1d3530ef9d6f9615cd6606b4ca76]
+entity OUTBOX--><rect fill="#D5E8D4" filter="url(#f1rgx2gldzoq8z)" height="36.2969" style="stroke: #33507A; stroke-width: 1.5;" width="224" x="360" y="309.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="204" x="370" y="332.9482">Transactional Outbox [новое]</text><path d="M104.5,755.9531 L104.5,796.2188 A0,0 0 0 0 104.5,796.2188 L369.5,796.2188 A0,0 0 0 0 369.5,796.2188 L369.5,765.9531 L359.5,755.9531 L241,755.9531 L237,670.6331 L233,755.9531 L104.5,755.9531 A0,0 0 0 0 104.5,755.9531 " fill="#FBFB77" filter="url(#f1rgx2gldzoq8z)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M359.5,755.9531 L359.5,765.9531 L369.5,765.9531 L359.5,755.9531 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="110.5" y="773.02">Обмен через staging сворачивается</text><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="216" x="110.5" y="788.1528">по подходу Expand and Contract</text><!--MD5=[e0300a6c132b1a1395adb7e7973dde25]
+link CUST to ACL--><path d="M1630.55,594.9131 C1616.96,574.0531 1599.15,550.4431 1579,532.9531 C1371.01,352.3831 1063.93,226.8131 920.39,174.3731 " fill="none" id="CUST-&gt;ACL" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="915.35,172.5431,922.4345,179.3849,920.0473,174.2564,925.1758,171.8692,915.35,172.5431" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="1380" y="389.02">checkout</text><!--MD5=[2d667ca63452a5ae92b26f25d9a2b2a2]
+link ACL to ORDER--><path d="M830.25,172.7431 C815.43,208.3231 788.97,271.8331 775.08,305.1631 " fill="none" id="ACL-&gt;ORDER" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="773.12,309.8531,780.2634,303.0729,775.036,305.2348,772.8741,300.0073,773.12,309.8531" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[56843c55870cd2af43737abe764be4b8]
+link ORDER to PAYORCH--><path d="M767.43,346.0731 C769.2,367.1931 772.21,403.1431 774.15,426.3331 " fill="none" id="ORDER-&gt;PAYORCH" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="774.57,431.3631,777.811,422.0628,774.156,426.3803,769.8385,422.7253,774.57,431.3631" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1e85bb49a9e99bbbb6b522ca35f80949]
+link ORDER to PROMO--><path d="M724.31,346.0731 C676.69,365.6231 598.13,397.8931 541.92,420.9731 " fill="none" id="ORDER-&gt;PROMO" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="537.23,422.9031,547.0751,423.1751,541.8534,420.9994,544.0291,415.7777,537.23,422.9031" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[36f2ee429a208de2d80e1b8170fdf9ef]
+link ORDER to ORA--><path d="M742.85,309.8031 C707.95,283.9531 640.55,234.0231 589.53,196.2331 " fill="none" id="ORDER-&gt;ORA" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="585.26,193.0731,590.114,201.6427,589.2788,196.0479,594.8737,195.2127,585.26,193.0731" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8826c9f8278fd88ad87f67fb963416ca]
+link ORA to OUTBOX--><path d="M509.87,193.3031 C499.7,229.2031 486.07,277.3031 478.24,304.9331 " fill="none" id="ORA-&gt;OUTBOX" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="476.85,309.8531,483.1478,302.2809,478.2104,305.0417,475.4495,300.1043,476.85,309.8531" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="28" x="501" y="236.02">CDC</text><!--MD5=[5035fc47e2880874758a273a5c004025]
+link OUTBOX to EVENTS--><path d="M438.33,346.0731 C400.17,365.4831 337.4,397.4031 292.08,420.4431 " fill="none" id="OUTBOX-&gt;EVENTS" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="287.47,422.7831,297.3063,422.2856,291.9306,420.5242,293.692,415.1486,287.47,422.7831" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="376" y="389.02">Transactional Outbox</text><!--MD5=[131b8e9c13244e0a1ea250ff2dc9cbb9]
+link EVENTS to STATUSSVC--><path d="M292.65,475.9831 C333.74,495.1431 385.87,520.1831 406,532.9531 C444.3,557.2531 484.32,590.4331 511.15,613.9831 " fill="none" id="EVENTS-&gt;STATUSSVC" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="515.01,617.3831,510.9238,608.422,511.2667,614.0684,505.6202,614.4113,515.01,617.3831" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[fbc2529ff871bac1fa65f11b7e2da8aa]
+link EVENTS to ANALYT--><path d="M281.32,476.0431 C300.03,485.4831 322.44,495.0531 344,499.9531 C360.01,503.5931 923.47,496.2631 935,507.9531 C967.22,540.6131 921.99,585.4431 883.82,614.3131 " fill="none" id="EVENTS-&gt;ANALYT" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="879.68,617.4031,889.2887,615.2415,883.692,614.4191,884.5143,608.8224,879.68,617.4031" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[baf7bb3115318b82012707074a7a8b90]
+link EVENTS to INTG--><path d="M237,476.0131 C237,511.1031 237,574.1431 237,611.9031 " fill="none" id="EVENTS-&gt;INTG" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="237,617.2831,241,608.2831,237,612.2831,233,608.2831,237,617.2831" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3cca533684d6f28d8987d048c5ab2ff7]
+link STATUSSVC to CUST--><path d="M572.79,617.3631 C604.98,590.5731 659.08,550.9731 714,534.9531 C806.27,508.0431 1493.39,491.2731 1579,534.9531 C1602.23,546.8031 1620.21,569.0231 1633.11,590.3331 " fill="none" id="STATUSSVC-&gt;CUST" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1635.79,594.8631,1634.6519,585.0803,1633.2449,590.5593,1627.7658,589.1524,1635.79,594.8631" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="829.5" y="521.02">единый статус</text><!--MD5=[5b21a881593f2a25ddd6ca63d31c7f70]
+link STATUSSVC to OBS--><path d="M520.83,617.2131 C495.98,590.4731 452.97,550.1731 406,532.9531 C390.24,527.1731 115.71,536.9731 104,524.9531 C72.37,492.4731 82.41,462.8131 104,422.9531 C115.63,401.4931 136.85,413.5131 150,392.9531 C192.98,325.7731 192.67,227.4231 189.17,177.8931 " fill="none" id="STATUSSVC-&gt;OBS" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="188.78,172.6731,185.4861,181.9548,189.1657,177.6582,193.4623,181.3378,188.78,172.6731" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9548047c841264bb39da6c64f5a3a7b5]
+link OBS to STATUSSVC--><path d="M191.9,172.4731 C194.99,187.1431 198.45,205.9831 200,222.9531 C200.69,230.4731 200.32,232.4031 200,239.9531 C198,287.1931 205.11,300.8231 191,345.9531 C183.81,368.9431 179.1,374.1831 164,392.9531 C151.58,408.4031 139.02,404.8231 131,422.9531 C117.16,454.2531 108.29,474.3531 131,499.9531 C151.42,522.9731 377.63,521.0231 406,532.9531 C449.42,551.2031 490.3,587.4531 515.91,613.3531 " fill="none" id="OBS-&gt;STATUSSVC" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="519.58,617.0931,516.1375,607.8655,516.0804,613.5221,510.4238,613.4649,519.58,617.0931" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="179" y="389.02">correlation-id</text><!--MD5=[2bb984308bcd4ff0a4fc6b003a69161b]
+link INTG to DLV--><path d="M266.38,617.3631 C298.15,590.5831 351.58,550.9831 406,534.9531 C485.83,511.4431 1079.43,500.0931 1155,534.9531 C1193.43,552.6831 1221.86,595.0031 1236.61,621.3831 " fill="none" id="INTG-&gt;DLV" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1239.03,625.7931,1238.2185,615.9778,1236.6297,621.4069,1231.2006,619.8182,1239.03,625.7931" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="255" x="423.5" y="521.02">единый контракт, идемпотентность</text><!--MD5=[e91633b700e81dede1d9bdce54243f27]
+link PAYORCH to PAY--><path d="M927.21,462.2631 C1069.41,475.2031 1270.77,498.7631 1342,532.9531 C1385.38,553.7731 1423.68,596.1931 1444.18,621.8431 " fill="none" id="PAYORCH-&gt;PAY" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1447.32,625.8131,1444.885,616.27,1444.2227,621.888,1438.6048,621.2257,1447.32,625.8131" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="91" x="1318" y="521.02">createSession</text><!--MD5=[7d84db6e6b6bedd20129473c25a5f8c1]
+link MP to INTG--><path d="M1061.24,625.7331 C1044.75,599.8331 1010.52,553.4631 967,534.9531 C909.64,510.5631 465.79,517.3431 406,534.9531 C353.92,550.2931 302.74,587.2231 270.6,613.8431 " fill="none" id="MP-&gt;INTG" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="266.38,617.3631,275.8508,614.6605,270.2164,614.1566,270.7203,608.5222,266.38,617.3631" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="137" x="685.5" y="521.02">через ACL партнёра</text><!--MD5=[ae6678ba86eb702d82866c4c82b97d73]
+link OBS to ORDER--><path d="M232.16,172.6231 C274.98,194.9931 341.24,225.9731 403,239.9531 C489.33,259.4931 516.12,226.5231 602,247.9531 C651.1,260.2031 702.94,288.0331 734.88,307.1631 " fill="none" id="OBS-&gt;ORDER" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="739.45,309.9231,733.8222,301.8405,735.1727,307.3338,729.6794,308.6843,739.45,309.9231" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="404" y="236.02">correlation-id</text><!--MD5=[9a7f0f790d1cf2c5a4ea80feb7423123]
+link OBS to INTG--><path d="M164.85,172.4731 C115.58,235.2131 2.1,400.8931 67,524.9531 C88.53,566.0931 131.65,595.7731 169.07,615.0731 " fill="none" id="OBS-&gt;INTG" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="173.61,617.3731,167.388,609.7386,169.1494,615.1142,163.7737,616.8756,173.61,617.3731" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="Sans" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="57" y="389.02">correlation-id</text><rect fill="#DDDDDD" height="75.1875" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.0;" width="556" x="606.5" y="813.9531"/><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="435" x="612.5" y="831.9482">[новое] это новый или существенно изменённый элемент.</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="317" x="612.5" y="848.2451">[без изменений] это сохраняемый участок.</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="251" x="612.5" y="864.542">[изолируется] это ядро со швами.</text><text fill="#000000" font-family="Sans" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="544" x="612.5" y="880.8389">Сплошная стрелка это вызов или поток. Пунктир это сквозной контекст.</text><!--MD5=[5d654eaeb1c3d6855154414c8ae5cf26]
+@startuml to-be-context
+title RetailCore TO-BE Context. Целевое промежуточное состояние
+
+skinparam DefaultFontName Sans
+skinparam rectangle {
+  BackgroundColor #F7F9FC
+  BorderColor #33507A
+}
+skinparam database {
+  BackgroundColor #FFF2CC
+  BorderColor #B7942A
+}
+legend bottom
+  [новое] это новый или существенно изменённый элемент.
+  [без изменений] это сохраняемый участок.
+  [изолируется] это ядро со швами.
+  Сплошная стрелка это вызов или поток. Пунктир это сквозной контекст.
+endlegend
+
+package "Внешние участники" #EEEEEE {
+  actor "Клиенты\nвеб и мобильное" as CUST
+  rectangle "Маркетплейсы" as MP #FFE6CC
+  rectangle "Платёжные провайдеры" as PAY #FFE6CC
+  rectangle "Службы доставки" as DLV #FFE6CC
+}
+
+package "Платформа RetailCore, целевое промежуточное состояние" {
+
+  rectangle "Слой наблюдаемости\ncorrelation-id и таймлайн [новое]" as OBS #D5E8D4
+
+  package "Монолитное ядро на Java [изолируется]" #E6F0FF {
+    rectangle "Оформление заказа [без изменений]" as ORDER #DAE8FC
+    rectangle "Оркестрация оплаты [без изменений]" as PAYORCH #DAE8FC
+    rectangle "Промо за абстракцией\nBranch by Abstraction [новое]" as PROMO #D5E8D4
+    rectangle "Transactional Outbox [новое]" as OUTBOX #D5E8D4
+  }
+
+  rectangle "Anti-Corruption Layer\nвокруг ядра [новое]" as ACL #D5E8D4
+  rectangle "Слой событий заказа\nброкер [новое]" as EVENTS #D5E8D4
+  rectangle "Сервис статусов и таймлайна\nread-модель [новое]" as STATUSSVC #D5E8D4
+  rectangle "Интеграционный слой\nфасад, ACL, идемпотентность [новое]" as INTG #D5E8D4
+  rectangle "Аналитическое хранилище\nна событиях [новое]" as ANALYT #D5E8D4
+
+  database "Oracle\nсистема записи ядра\nбез аналитической нагрузки\nи без обмена через БД [изменяется]" as ORA
+}
+
+CUST - -> ACL : checkout
+ACL - -> ORDER
+ORDER - -> PAYORCH
+ORDER - -> PROMO
+ORDER - -> ORA
+ORA - -> OUTBOX : CDC
+OUTBOX - -> EVENTS : Transactional Outbox
+
+EVENTS - -> STATUSSVC
+EVENTS - -> ANALYT
+EVENTS - -> INTG
+
+STATUSSVC - -> CUST : единый статус
+STATUSSVC - -> OBS
+
+INTG - -> DLV : единый контракт, идемпотентность
+PAYORCH - -> PAY : createSession
+MP - -> INTG : через ACL партнёра
+
+OBS ..> ORDER : correlation-id
+OBS ..> INTG : correlation-id
+OBS ..> STATUSSVC : correlation-id
+
+note bottom of INTG
+  Обмен через staging сворачивается
+  по подходу Expand and Contract
+end note
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 17.0.20.1+1
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
