@@ -1,0 +1,44 @@
+@startuml stakeholders-matrix
+' Матрица стейкхолдеров RetailCore по сетке Менделоу (Power / Interest).
+' Быстрый вид этой же матрицы в Mermaid лежит в ../stakeholders.md.
+title Матрица стейкхолдеров RetailCore (Power / Interest)
+
+skinparam rectangle {
+  BackgroundColor #F7F9FC
+  BorderColor #33507A
+  FontColor #1B2A44
+}
+skinparam TitleFontSize 16
+skinparam DefaultFontName Sans
+
+rectangle "Высокое влияние, высокий интерес\nСтратегия: управлять плотно" as Q1 #DAE8FC {
+  rectangle "S1 Спонсор (Digital Commerce)" as S1
+  rectangle "S2 Руководитель заказов" as S2
+}
+
+rectangle "Высокое влияние, низкий интерес\nСтратегия: держать в курсе плотно" as Q2 #E1D5E7 {
+  rectangle "S3 Tech Lead монолита" as S3
+  rectangle "S7 Инфраструктура и эксплуатация" as S7
+  rectangle "S8 Платёжный и финансовый блок" as S8
+}
+
+rectangle "Низкое влияние, высокий интерес\nСтратегия: информировать и вовлекать как экспертов" as Q3 #D5E8D4 {
+  rectangle "S4 Поддержка" as S4
+  rectangle "S5 Логистика" as S5
+  rectangle "S6 Аналитика" as S6
+  rectangle "S9 Продукт и маркетинг" as S9
+}
+
+rectangle "Низкое влияние, низкий интерес\nСтратегия: мониторить и удовлетворять формально" as Q4 #FFF2CC {
+  rectangle "S10 Маркетплейсы" as S10
+  rectangle "S11 Платёжные провайдеры" as S11
+  rectangle "S12 Службы доставки" as S12
+  rectangle "S14 Security и комплаенс" as S14
+}
+
+Q1 -[hidden]right- Q2
+Q3 -[hidden]right- Q4
+Q1 -[hidden]down- Q3
+Q2 -[hidden]down- Q4
+
+@enduml

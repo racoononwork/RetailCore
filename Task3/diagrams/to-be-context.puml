@@ -1,0 +1,80 @@
+@startuml to-be-context
+' Диаграмма контекста TO-BE для RetailCore, целевое промежуточное состояние.
+' Быстрый вид этой же диаграммы в Mermaid лежит в ../transformation.md.
+' Пометка [новое] обозначает новый или изменённый элемент.
+' Пометка [без изменений] обозначает сохраняемый участок.
+' Пометка [изолируется] обозначает ядро, вокруг которого ставятся швы.
+title RetailCore TO-BE Context. Целевое промежуточное состояние
+
+skinparam DefaultFontName Sans
+skinparam rectangle {
+  BackgroundColor #F7F9FC
+  BorderColor #33507A
+}
+skinparam database {
+  BackgroundColor #FFF2CC
+  BorderColor #B7942A
+}
+legend bottom
+  [новое] это новый или существенно изменённый элемент.
+  [без изменений] это сохраняемый участок.
+  [изолируется] это ядро со швами.
+  Сплошная стрелка это вызов или поток. Пунктир это сквозной контекст.
+endlegend
+
+package "Внешние участники" #EEEEEE {
+  actor "Клиенты\nвеб и мобильное" as CUST
+  rectangle "Маркетплейсы" as MP #FFE6CC
+  rectangle "Платёжные провайдеры" as PAY #FFE6CC
+  rectangle "Службы доставки" as DLV #FFE6CC
+}
+
+package "Платформа RetailCore, целевое промежуточное состояние" {
+
+  rectangle "Слой наблюдаемости\ncorrelation-id и таймлайн [новое]" as OBS #D5E8D4
+
+  package "Монолитное ядро на Java [изолируется]" #E6F0FF {
+    rectangle "Оформление заказа [без изменений]" as ORDER #DAE8FC
+    rectangle "Оркестрация оплаты [без изменений]" as PAYORCH #DAE8FC
+    rectangle "Промо за абстракцией\nBranch by Abstraction [новое]" as PROMO #D5E8D4
+    rectangle "Transactional Outbox [новое]" as OUTBOX #D5E8D4
+  }
+
+  rectangle "Anti-Corruption Layer\nвокруг ядра [новое]" as ACL #D5E8D4
+  rectangle "Слой событий заказа\nброкер [новое]" as EVENTS #D5E8D4
+  rectangle "Сервис статусов и таймлайна\nread-модель [новое]" as STATUSSVC #D5E8D4
+  rectangle "Интеграционный слой\nфасад, ACL, идемпотентность [новое]" as INTG #D5E8D4
+  rectangle "Аналитическое хранилище\nна событиях [новое]" as ANALYT #D5E8D4
+
+  database "Oracle\nсистема записи ядра\nбез аналитической нагрузки\nи без обмена через БД [изменяется]" as ORA
+}
+
+CUST --> ACL : checkout
+ACL --> ORDER
+ORDER --> PAYORCH
+ORDER --> PROMO
+ORDER --> ORA
+ORA --> OUTBOX : CDC
+OUTBOX --> EVENTS : Transactional Outbox
+
+EVENTS --> STATUSSVC
+EVENTS --> ANALYT
+EVENTS --> INTG
+
+STATUSSVC --> CUST : единый статус
+STATUSSVC --> OBS
+
+INTG --> DLV : единый контракт, идемпотентность
+PAYORCH --> PAY : createSession
+MP --> INTG : через ACL партнёра
+
+OBS ..> ORDER : correlation-id
+OBS ..> INTG : correlation-id
+OBS ..> STATUSSVC : correlation-id
+
+note bottom of INTG
+  Обмен через staging сворачивается
+  по подходу Expand and Contract
+end note
+
+@enduml

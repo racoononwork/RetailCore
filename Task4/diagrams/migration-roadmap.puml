@@ -1,0 +1,41 @@
+@startuml migration-roadmap
+' Компактная схема волн миграции RetailCore и зависимостей между ними.
+' Быстрый вид с длительностями в Mermaid-gantt лежит в ../migration-roadmap.md.
+' Стрелка означает жёсткую зависимость. Волны на одном уровне после Wave 2 идут параллельно.
+title Roadmap миграции RetailCore. Волны и зависимости
+
+skinparam DefaultFontName Sans
+skinparam rectangle {
+  BorderColor #33507A
+  FontColor #1B2A44
+}
+left to right direction
+
+legend bottom
+  Стрелка это жёсткая зависимость.
+  Wave 3, Wave 4 и Wave 5 после Wave 2 идут параллельно.
+  Wave 6 зависит только от Wave 1 и идёт параллельно с Wave 4 и Wave 5.
+endlegend
+
+rectangle "Wave 0\nbaseline, брокер,\nсловарь событий" as W0 #E1D5E7
+rectangle "Wave 1\nсквозная\nнаблюдаемость" as W1 #DAE8FC
+rectangle "Wave 2\nслой событий заказа,\noutbox и CDC" as W2 #DAE8FC
+rectangle "Wave 3\nсервис статусов\nread-модель и cutover" as W3 #D5E8D4
+rectangle "Wave 4\nинтеграционный слой,\nуход от обмена через БД" as W4 #D5E8D4
+rectangle "Wave 5\nразгрузка Oracle\nот аналитики" as W5 #D5E8D4
+rectangle "Wave 6\nпромо за абстракцией,\nполитика деградации" as W6 #D5E8D4
+rectangle "Wave 7\nизоляция ядра,\nподготовка ухода от Oracle" as W7 #FFF2CC
+
+W0 --> W1
+W0 --> W2
+W1 --> W2
+W2 --> W3
+W2 --> W4
+W2 --> W5
+W1 --> W6
+W3 --> W7
+W4 --> W7
+W5 --> W7
+W6 --> W7
+
+@enduml
