@@ -1,0 +1,9 @@
+# Локальный PlantUML jar, если используется вместо команды или Docker
+plantuml.jar
+
+# Служебные файлы окружения
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

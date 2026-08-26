@@ -1,0 +1,12 @@
+# Конфигурация pre-commit. Устанавливается командой: pre-commit install
+# Перед коммитом рендерит изменённые PlantUML-диаграммы в PNG и SVG
+# и добавляет результат в коммит.
+repos:
+  - repo: local
+    hooks:
+      - id: render-plantuml
+        name: Рендер PlantUML в PNG и SVG
+        entry: scripts/render-diagrams.sh
+        language: script
+        files: \.puml$
+        pass_filenames: false
